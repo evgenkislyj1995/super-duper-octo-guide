@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login - Haikus for Mona</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Login</h1>
+    <div class="login-container">
+      <% if (error) { %>
+        <p class="login-error"><%= error %></p>
+      <% } %>
+      <form method="POST" action="/login">
+        <div class="login-field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" required>
+        </div>
+        <div class="login-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+  </body>
+</html>
