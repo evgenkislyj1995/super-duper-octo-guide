@@ -9,6 +9,9 @@
     <meta property="og:image" content="/images/sunlight.jpg">
   </head>
   <body>
+    <form class="logout-link" method="POST" action="/logout">
+      <button type="submit">Log out</button>
+    </form>
     <h1>Haikus for Mona</h1>
     <div>
       <% for(var i=0; i < haikus.length; i++) { %>
