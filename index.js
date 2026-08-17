@@ -1,3 +1,4 @@
+require('dotenv').config();
 let express = require('express');
 let session = require('express-session');
 let crypto = require('crypto');
